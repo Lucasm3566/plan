@@ -10,7 +10,7 @@
     </button>
 
     <a-scene>
-      <a-entity id="garage" gltf-model="./garage.glb" scale="0.02 0.02 0.02" rotation="0 0 0" animation="property: rotation; to: 0 359 0; dur: 20000; loop: true; easing: linear" ></a-entity>
+      <a-entity id="garage" gltf-model="./lycée.glb" scale="0.02 0.02 0.02" rotation="0 0 0" animation="property: rotation; to: 0 359 0; dur: 20000; loop: true; easing: linear" ></a-entity>
     </a-scene>
 
     <script>
@@ -20,8 +20,8 @@
       // Quand on clique, on télécharge le fichier
       downloadBtn.addEventListener('click', () => {
         const link = document.createElement('a');
-        link.href = './garage.glb'; // Chemin vers le fichier GLB
-        link.download = 'garage.glb'; // Nom du fichier téléchargé
+        link.href = './lycée.glb'; // Chemin vers le fichier GLB
+        link.download = 'lycée.glb'; // Nom du fichier téléchargé
         link.click();
       });
     </script>

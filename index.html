@@ -3,21 +3,27 @@
   <head>
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
   </head>
-       <body>
-           <a-scene>
-              <a-entity id="garage" gltf-model="./garage.glb" ></a-entity>
+  <body>
+    <!-- Bouton de téléchargement -->
+    <button id="downloadBtn" style="position:absolute; top:10px; left:10px; z-index:999;">
+      Télécharger le GLB
+    </button>
 
+    <a-scene>
+      <a-entity id="garage" gltf-model="./garage.glb"></a-entity>
+    </a-scene>
 
+    <script>
+      // Sélection du bouton
+      const downloadBtn = document.getElementById('downloadBtn');
 
-
-
-
-
-
-
-
-
-             
-           </a-scene>
-       </body>
+      // Quand on clique, on télécharge le fichier
+      downloadBtn.addEventListener('click', () => {
+        const link = document.createElement('a');
+        link.href = './garage.glb'; // Chemin vers le fichier GLB
+        link.download = 'garage.glb'; // Nom du fichier téléchargé
+        link.click();
+      });
+    </script>
+  </body>
 </html>

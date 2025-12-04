@@ -11,5 +11,5 @@ Téléchargement direct du fichier : [https://www.github.com/alexis-pag/plan/lyc
 - Objet au format .glb, compatible avec la plupart des logiciels 3D du marché
 
 ## Exploitation
-- Utiliser tout logiciel 3D et immporter le fichier .glb
+- Utiliser tout logiciel 3D et importer le fichier .glb
 ![Exemple](https://github.com/alexis-pag/plan/blob/main/mesure.jpg) 

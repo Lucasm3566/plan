@@ -5,7 +5,7 @@ Encadrement M. Farcot, lycée Louis de Cormontaigne.
 
 Accès au démonstrateur et lien de téléchargement : [https://alexis-pag.github.io/plan/](https://alexis-pag.github.io/plan/)
 
-Téléchargement direct du fichier : [https://www.github.com/alexis-pag/plan/lycée.glb](https://github.com/alexis-pag/plan/blob/main/lyc%C3%A9e.glb)
+Téléchargement direct du fichier : [https://github.com/e6d4864e-838f-4556-991c-aaa7e9bf2d2f](https://github.com/e6d4864e-838f-4556-991c-aaa7e9bf2d2f)
 
 ## Données techniques 
 - Echelle 1:1

@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-  <title>Camera orbit A-Frame</title>
+  <script src="https://unpkg.com/aframe-look-at-component@1.0.0/dist/aframe-look-at-component.min.js"></script>
+  <title>Orbit Camera A-Frame</title>
 </head>
 
 <body>
@@ -13,26 +14,32 @@
   <a-entity light="type: directional; intensity: 1" position="2 4 2"></a-entity>
   <a-entity light="type: ambient; intensity: 0.5"></a-entity>
 
-  <!-- Sol -->
-  <a-plane rotation="-90 0 0" width="30" height="30" color="#9BC"></a-plane>
-
-  <!-- Modèle GLB (au centre) -->
-  <a-entity gltf-model="garage.glb"
+  <!-- Modèle au centre -->
+  <a-entity id="target"
+            gltf-model="garage.glb"
             position="0 0 0"
             scale="1 1 1">
   </a-entity>
 
-  <!-- Camera rig qui tourne autour de l'objet -->
+  <!-- Sol -->
+  <a-plane rotation="-90 0 0" width="30" height="30" color="#9BC"></a-plane>
+
+  <!-- Camera rig qui orbite autour de l’objet -->
   <a-entity id="orbitRig"
-            position="0 1.6 6"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear">
-    <a-entity camera position="0 0 0"></a-entity>
+            position="0 0 0"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear">
+
+    <!-- Caméra placée à distance fixe et regardant l'objet -->
+    <a-entity 
+      camera
+      position="0 1.6 6"
+      look-at="#target">
+    </a-entity>
+
   </a-entity>
 
-  <!-- Ciel -->
   <a-sky color="#ECECEC"></a-sky>
 
 </a-scene>
 </body>
 </html>
-
